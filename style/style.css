@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+.success .form-control{
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.success label{
+    color: #3c763d;
+}
+.error .form-control{
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.error label{
+    color: #a94442;
+}
+.error span{
+    color: #a94442;
+}
+.append{
+    position: relative;
+}
+#append{
+    overflow-x: hidden;
+    max-height: 371px;
+}
+#append::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+#append::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+#append::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+#send{
+    position: absolute;
+    z-index: 1000;
+    right: 3%;
+    bottom: 2%;
+}
+.tables{
+    height: 586px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    background: #0062cc!important ;
+    color: white!important;
+    border-color: #005cbf!important;
+    display: inline-block!important;
+    font-weight: 400!important;
+    text-align: center!important;
+    white-space: nowrap!important;
+    vertical-align: middle!important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:not(:disabled):not(.disabled){
+    cursor: pointer!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    color: #fff!important;
+    background-color: #204d74!important;
+    border-color: #204d74!important;
+}
+.current{
+    color: #fff!important;
+    background-color: #0062cc!important;
+}
+@media (max-width: 480px){
+    #send{
+        right: 11%;
+    }
+}
